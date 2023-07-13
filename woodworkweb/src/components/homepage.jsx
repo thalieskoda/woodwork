@@ -3,11 +3,10 @@ import { BsCart3 } from "react-icons/bs";
 import { NavLink } from "react-router-dom";
 
 import GlobalStyles from "../utils/GlobalStyles";
-import { Header } from "./header/header";
 export const Homepage = () => {
   return (
     <>
-<Header/>
+    <h1>This is the homepage</h1>
     </>
   );
 };
