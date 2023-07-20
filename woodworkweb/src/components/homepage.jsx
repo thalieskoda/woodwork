@@ -49,10 +49,13 @@ const LoadingIcon = styled(FiLoader)`
 `;
  
 const Button = styled(NavLink)`
-  color: black;
+  color: white;
   text-decoration: none;
   flex-direction: row;
   justify-content: space-around;
+  background-color: #8A9A5B;
+  padding: 10px 40px;
+  margin-top:20px;
   
   &hover: {
       opacity: 70%;
@@ -75,13 +78,14 @@ const Container = styled.section`
 const Paragraph = styled.p`
     font-family: philosopher;
     font-weight:100;
-    font-size:20px;
+    font-size:25px;
     opacity:0.5;
     padding-bottom:10px;
     `
 const Title = styled.h1`
     font-family: unica one;
     text-align:center;
+    font-size:100px;
 `
 const Div = styled.section`
     height:100vh;

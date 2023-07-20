@@ -1,23 +1,49 @@
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
+import picture from "../header/poups.png"
 
-
-export const Header =() => {
-    return (
-        <Container>
-        <Link to={"/"}>Home</Link>
+export const Header = () => {
+  return (
+    <Wrapper>
+      <LogoContainer>
+        <Img src={picture} alt="Your SVG" />
+      </LogoContainer>
+      <Container>
+        <Link to="/">Home</Link>
         <Link>Shop</Link>
-        <Link to={"/contact"}>Contact us</Link>
+        <Link to="/contact">Contact us</Link>
         <Link>FAQ</Link>
-        </Container>
-        
-    )
+      </Container>
+    </Wrapper>
+  );
 };
+
+const Wrapper = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 999;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+`
+const LogoContainer = styled.div`
+  display: flex;
+  align-items: center;
+  margin-left: 20px; 
+`
+
+const Img = styled.img`
+  height: 100px;
+  width: 100px;
+`;
 
 const Link = styled(NavLink)`
   color: black;
   text-decoration: none;
-  margin: 0 40px; /* Add space around each link */
+  margin: 0 30px;
 
   &:hover {
     opacity: 0.7;
@@ -26,16 +52,9 @@ const Link = styled(NavLink)`
 `;
 
 const Container = styled.div`
-  position: fixed;
-  top: 0;
-  font-family:poppins;
-  font-weight:600;
-  width:100vw;
-  left: 0; /* Position the header at the top-left corner */
+  font-family: poppins;
+  font-weight: 600;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
   padding: 10px 60px;
-  z-index: 999; /* Set a high z-index to make sure the header appears over the page content */
-  background-color:transparent; /* Set the background to transparent */
 `;

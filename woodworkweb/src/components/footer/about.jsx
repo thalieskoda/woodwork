@@ -15,6 +15,7 @@ export const About = () => {
     <>
       <Wrapper>
         <h1>About me</h1>
+        
         <Container>
         <P ref={ref}
           initial="hidden"
