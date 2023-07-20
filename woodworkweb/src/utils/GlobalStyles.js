@@ -5,7 +5,7 @@ const GlobalStyles = createGlobalStyle`
   :root {
     --color-main-background: #fff;
     --color-secondary: #edf0f2;
-    --color-accent: #ceff1a;
+    --color-accent: #8A9A5B;
     --font-heading: 'Ubuntu', Arial, Helvetica, sans-serif;
     --font-body: 'Source Sans Pro', Arial, Helvetica, sans-serif;
   }
@@ -24,6 +24,9 @@ const GlobalStyles = createGlobalStyle`
     font-family: var(--font-body);
     font-size: 16px;
     line-height: 1.5;
+    margin: 0px;
+    background-color: red;
+    padding: 0px;
   }
 
   /* Set background color for entire page */
@@ -82,19 +85,17 @@ const GlobalStyles = createGlobalStyle`
     background-color: var(--color-accent);
     border: none;
     border-radius: 25px;
-    color: black;
+    color: white;
     cursor: pointer;
     font-size: 16px;
     font-weight: bold;
     padding: 12px 50px;
     transition: all 0.3s ease;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
-    border: 1px black solid;
-
   }
 
   button:hover {
-    background-color: #d4ff8a;
+    background-color:#B7CD78 ;
   }
 
   /* Navigation */

@@ -1,49 +1,41 @@
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
-import logo from "../header/cat.webp"
 
 
 export const Header =() => {
     return (
         <Container>
-        <h1>WoodWork</h1>
-    <Link to="/">
-        <Img src={logo}/>
-    </Link>
+        <Link to={"/"}>Home</Link>
+        <Link>Shop</Link>
+        <Link to={"/contact"}>Contact us</Link>
+        <Link>FAQ</Link>
         </Container>
         
     )
 };
+
 const Link = styled(NavLink)`
   color: black;
   text-decoration: none;
+  margin: 0 40px; /* Add space around each link */
 
-  &hover: {
-    opacity: 70%;
-  cursor: pointer;
-  }`;
-
-const Img = styled.img`
-  height: 150px;
-  width: 200px;
-  object-fit: contain;
-  align-self: center;
-  transition: transform 0.3s ease-in-out;
-`;
-const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  background-size: cover;
-  height: auto;
-  padding: 0 40px 0 14px;
-  border-bottom: 1px black solid;
-  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
-
-  @media (max-width: 1450px) {
-    flex-direction: column;
-    height: auto;
-    padding: 10px 0 0 0;
+  &:hover {
+    opacity: 0.7;
+    cursor: pointer;
   }
+`;
+
+const Container = styled.div`
+  position: fixed;
+  top: 0;
+  font-family:poppins;
+  font-weight:600;
+  width:100vw;
+  left: 0; /* Position the header at the top-left corner */
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 10px 60px;
+  z-index: 999; /* Set a high z-index to make sure the header appears over the page content */
+  background-color:transparent; /* Set the background to transparent */
 `;

@@ -10,12 +10,10 @@ import {
 
 export const Footer = () => {
     return(
-        <>
-        <h1>This is the footer</h1>
-
+    <>
+        <Wrapper>
         <Link to="contact">Contact us</Link>
         <Link to="about">About Us</Link>
-        <Wrapper>
         <Link to="#">
           <AiOutlineYoutube />
         </Link>
@@ -48,8 +46,13 @@ const Link = styled(NavLink)`
 `;
 const Wrapper = styled.div`
   padding: 40px;
-  width: 400px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  
 `;
+
+const Container = styled.div`
+    background-color:blue;
+
+`
