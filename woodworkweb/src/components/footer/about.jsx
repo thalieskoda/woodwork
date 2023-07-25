@@ -14,7 +14,7 @@ export const About = () => {
   return (
     <>
       <Wrapper>
-        <h1>About me</h1>
+        <Title>A little bit about myself</Title>
         
         <Container>
         <P ref={ref}
@@ -66,6 +66,13 @@ export const About = () => {
   );
 };
 
+const Title = styled.h1`
+  width: 100%;
+  text-align: center;
+  padding:20px;
+`;
+
+
 const Container = styled.div`
 display:flex;
 flex-direction:row;
@@ -80,4 +87,5 @@ const Wrapper = styled.div`
   height: 100vh;
   flex-direction: column;
   justify-content: space-around;
+
 `;

@@ -14,6 +14,7 @@ export const Footer = () => {
         <Wrapper>
         <Link to="contact">Contact us</Link>
         <Link to="about">About Us</Link>
+        <Link to="faq">FAQ</Link>
         <Link to="#">
           <AiOutlineYoutube />
         </Link>
@@ -49,7 +50,7 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  
+  background-color: #f7f6f0;
 `;
 
 const Container = styled.div`

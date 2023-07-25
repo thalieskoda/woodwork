@@ -5,13 +5,15 @@ import picture from "../header/poups.png"
 export const Header = () => {
   return (
     <Wrapper>
-      <LogoContainer>
+      <LogoContainer to="/" >
+
         <Img src={picture} alt="Your SVG" />
       </LogoContainer>
       <Container>
         <Link to="/">Home</Link>
         <Link>Shop</Link>
         <Link to="/contact">Contact us</Link>
+        <Link to="/about">About us</Link>
         <Link>FAQ</Link>
       </Container>
     </Wrapper>
@@ -25,11 +27,13 @@ const Wrapper = styled.div`
   width: 100vw;
   z-index: 999;
   background-color: transparent;
+  /* background-color: #8A9A5B; */
   display: flex;
+opacity:0.6;
   align-items: center;
   justify-content: space-between; 
 `
-const LogoContainer = styled.div`
+const LogoContainer = styled(NavLink)`
   display: flex;
   align-items: center;
   margin-left: 20px; 

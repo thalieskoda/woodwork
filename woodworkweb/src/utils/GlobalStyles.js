@@ -33,10 +33,20 @@ const GlobalStyles = createGlobalStyle`
   body {
     background-color: var(--color-main-background);
   }
-
+p{
+  font-family: philosopher;
+    font-weight:100;
+    font-size:16px;
+    opacity:0.5;
+    padding-bottom:10px;}
   /* Headings */
-  h1,
-  h2,
+  h1 ,
+  h2 {
+    font-family: var(--font-heading);
+    font-weight: bold;
+    line-height: 1.2;
+    color: var(--color-accent);
+  },
   h3,
   h4,
   h5,

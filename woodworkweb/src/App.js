@@ -6,6 +6,7 @@ import ContactUs from "./components/footer/contact-us";
 import { About } from "./components/footer/about";
 import GlobalStyles from "./utils/GlobalStyles";
 import { Products } from "./components/products/products";
+import { Faq } from "./components/footer/faq";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/products" element={<Products/>} />
         <Route path="/contact" element={<ContactUs/>} />
         <Route path="/about" element={<About/>} />
+        <Route path="/faq" element={<Faq/>} />
         <Route path="" element={<h1>404: Oops!</h1>} />
       </Routes>
       <Footer />
