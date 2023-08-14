@@ -94,7 +94,7 @@ p{
   button {
     background-color: var(--color-accent);
     border: none;
-    border-radius: 25px;
+    border-radius: 8px;
     color: white;
     cursor: pointer;
     font-size: 16px;

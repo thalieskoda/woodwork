@@ -4,29 +4,16 @@ import styled from "styled-components";
 const ContactUs = () => {
   return (
     <Wrapper>
-      <Title>Contact Us</Title>
-      <Box>
+    
         <Section>
           <SectionTitle>Customer Service</SectionTitle>
           <SectionText>
-            For any questions you might have, please reach out to our customer
-            service team at the following email address:
+            For any questions you might have, please reach out at the following email address:
           </SectionText>
-          <SectionLink href="mailto:info@futurefit.com">
+          <SectionLink href="mailto:info@woodwork.com">
             info@futurefit.com
           </SectionLink>
         </Section>
-        <Section>
-          <SectionTitle>Careers</SectionTitle>
-          <SectionText>
-            If you would like to work with us, please send us your CV at the
-            following email address:
-          </SectionText>
-          <SectionLink href="mailto:career@futurefit.com">
-            career@futurefit.com
-          </SectionLink>
-        </Section>
-      </Box>
     </Wrapper>
   );
 };
@@ -34,25 +21,16 @@ const ContactUs = () => {
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
   padding-bottom: 50px;
-`;
-
-const Title = styled.h1`
-  font-size: 36px;
-  margin: 48px;
-`;
-
-const Box = styled.div`
-  border: 1px solid black;
-  border-radius: 2px;
-  padding: 24px;
-  max-width: 600px;
+  height: 86vh;
 `;
 
 const Section = styled.div`
+margin-top:24vh;
+
   margin-bottom: 32px;
-  padding: 20px;
+  padding: 100px;
 `;
 
 const SectionTitle = styled.h2`
@@ -68,7 +46,7 @@ const SectionText = styled.p`
 const SectionLink = styled.a`
   background-color: var(--color-accent);
   border: none;
-  border-radius: 25px;
+  border-radius:8px;
   color: black;
   cursor: pointer;
   font-size: 16px;
@@ -79,7 +57,7 @@ const SectionLink = styled.a`
   border: 1px black solid;
 
   &:hover {
-    background-color: #d4ff8a;
+    background-color: #edf0f2;
   }
 `;
 
