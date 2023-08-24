@@ -11,10 +11,10 @@ export const Header = () => {
       </LogoContainer>
       <Container>
         <Link to="/">Home</Link>
-        <Link>Shop</Link>
+        <Link to="/products">Shop</Link>
         <Link to="/contact">Contact us</Link>
         <Link to="/about">About us</Link>
-        <Link>FAQ</Link>
+        <Link to="/faq">FAQ</Link>
       </Container>
     </Wrapper>
   );

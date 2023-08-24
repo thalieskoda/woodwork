@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import React from "react";
 import Slider from "react-slick";
-import { slidesData } from "../../utils/images/images";
+import { slidesData } from "../../utils/images/sliderImages";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 export const Carousel = () => {
@@ -38,7 +38,7 @@ margin-bottom:20px;
 const Title = styled.h1`
   width: 100%;
   text-align: center;
-  padding:20px;
+  padding:40px;
 `;
 
   const ProductTitle = styled.p`

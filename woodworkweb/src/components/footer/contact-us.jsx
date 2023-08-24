@@ -10,8 +10,8 @@ const ContactUs = () => {
           <SectionText>
             For any questions you might have, please reach out at the following email address:
           </SectionText>
-          <SectionLink href="mailto:info@woodwork.com">
-            info@futurefit.com
+          <SectionLink href="mailto:woodwork@hotmail.com">
+            woodwork@hotmail.com
           </SectionLink>
         </Section>
     </Wrapper>

@@ -7,9 +7,9 @@ export const Thankyou = () => {
         <Thanks>Thank you for your support!</Thanks>
       </Circle>
       <Weird>
-        
         <Review>Don't hesitate to leave a review</Review>
       </Weird>
+      <Text>Follow us!</Text>
     </Container>
   );
 };
@@ -21,6 +21,11 @@ font-size:20px;
 const Review = styled.h1`
 font-size:15px;
 color:white;
+`;
+const Text = styled.h1`
+font-size:15px;
+color:white;
+margin-left:100px;
 `;
 const Circle = styled.div`
   display: flex;

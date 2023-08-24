@@ -7,7 +7,7 @@ import {
     AiOutlineInstagram,
     AiOutlineTwitter,
   } from "react-icons/ai";
-
+import {PiTiktokLogo} from "react-icons/pi"
 export const Footer = () => {
     return(
     <>
@@ -15,9 +15,7 @@ export const Footer = () => {
         <Link to="contact">Contact us</Link>
         <Link to="about">About Us</Link>
         <Link to="faq">FAQ</Link>
-        <Link to="#">
-          <AiOutlineYoutube />
-        </Link>
+    
         <Link to="#">
           <AiOutlineFacebook />
         </Link>
@@ -25,7 +23,7 @@ export const Footer = () => {
           <AiOutlineInstagram />
         </Link>
         <Link to="#">
-          <AiOutlineTwitter />
+          <PiTiktokLogo/>
         </Link>
       </Wrapper>
         </>
