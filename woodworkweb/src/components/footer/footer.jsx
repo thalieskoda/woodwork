@@ -1,11 +1,8 @@
-import ContactUs from "./contact-us"
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 import {
-    AiOutlineYoutube,
     AiOutlineFacebook,
     AiOutlineInstagram,
-    AiOutlineTwitter,
   } from "react-icons/ai";
 import {PiTiktokLogo} from "react-icons/pi"
 export const Footer = () => {
@@ -50,8 +47,3 @@ const Wrapper = styled.div`
   justify-content: space-around;
   background-color: #f7f6f0;
 `;
-
-const Container = styled.div`
-    background-color:blue;
-
-`

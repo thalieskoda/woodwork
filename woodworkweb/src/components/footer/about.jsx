@@ -5,7 +5,6 @@ import Image3 from "../footer/image3.jpg"
 import Image4 from "../footer/image4.jpg"
 import Image7 from "../footer/image7.jpg"
 import {PiArrowBendDownRightBold, PiArrowBendDownLeftBold} from "react-icons/pi"
-//Component containing simple information about Future-Fit
 export const About = () => {
 
   const controls = useAnimation();
