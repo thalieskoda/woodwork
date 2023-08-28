@@ -1,18 +1,15 @@
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
-import {
-    AiOutlineFacebook,
-    AiOutlineInstagram,
-  } from "react-icons/ai";
-import {PiTiktokLogo} from "react-icons/pi"
+import { AiOutlineFacebook, AiOutlineInstagram } from "react-icons/ai";
+import { PiTiktokLogo } from "react-icons/pi";
 export const Footer = () => {
-    return(
+  return (
     <>
-        <Wrapper>
+      <Wrapper>
         <Link to="contact">Contact us</Link>
         <Link to="about">About Us</Link>
         <Link to="faq">FAQ</Link>
-    
+
         <Link to="#">
           <AiOutlineFacebook />
         </Link>
@@ -20,16 +17,13 @@ export const Footer = () => {
           <AiOutlineInstagram />
         </Link>
         <Link to="#">
-          <PiTiktokLogo/>
+          <PiTiktokLogo />
         </Link>
       </Wrapper>
-        </>
-    )
-}
+    </>
+  );
+};
 
-
-
- 
 const Link = styled(NavLink)`
   color: black;
   text-decoration: none;
@@ -37,7 +31,7 @@ const Link = styled(NavLink)`
   justify-content: space-around;
   &hover: {
     opacity: 70%;
-  cursor: pointer;
+    cursor: pointer;
   }
 `;
 const Wrapper = styled.div`

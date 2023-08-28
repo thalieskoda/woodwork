@@ -4,16 +4,16 @@ import styled from "styled-components";
 const ContactUs = () => {
   return (
     <Wrapper>
-    
-        <Section>
-          <SectionTitle>Customer Service</SectionTitle>
-          <SectionText>
-            For any questions you might have, please reach out at the following email address:
-          </SectionText>
-          <SectionLink href="mailto:woodwork@hotmail.com">
-            woodwork@hotmail.com
-          </SectionLink>
-        </Section>
+      <Section>
+        <SectionTitle>Customer Service</SectionTitle>
+        <SectionText>
+          For any questions you might have, please reach out at the following
+          email address:
+        </SectionText>
+        <SectionLink href="mailto:woodwork@hotmail.com">
+          woodwork@hotmail.com
+        </SectionLink>
+      </Section>
     </Wrapper>
   );
 };
@@ -27,7 +27,7 @@ const Wrapper = styled.div`
 `;
 
 const Section = styled.div`
-margin-top:24vh;
+  margin-top: 24vh;
 
   margin-bottom: 32px;
   padding: 100px;
@@ -46,7 +46,7 @@ const SectionText = styled.p`
 const SectionLink = styled.a`
   background-color: var(--color-accent);
   border: none;
-  border-radius:8px;
+  border-radius: 8px;
   color: black;
   cursor: pointer;
   font-size: 16px;

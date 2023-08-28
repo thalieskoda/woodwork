@@ -3,16 +3,16 @@ import { BsCart3 } from "react-icons/bs";
 import { FiLoader } from "react-icons/fi";
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
-import woody from "../components/woody.jpg"
+import woody from "../components/woody.jpg";
 import { About } from "./footer/about";
 import { Carousel } from "./products/carousel";
 import { Thankyou } from "./footer/thankyou";
 export const Homepage = () => {
-const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
-return (
+  return (
     <>
-     {isLoading ? (
+      {isLoading ? (
         <LoadingIcon>
           <FiLoader />
         </LoadingIcon>
@@ -24,10 +24,10 @@ return (
             <Button to={"/products"}>Shop now</Button>
           </Container>
           <Div>
-            <About/>
+            <About />
           </Div>
-            <Carousel/>
-            <Thankyou/>
+          <Carousel />
+          <Thankyou />
         </>
       )}
     </>
@@ -39,27 +39,27 @@ const LoadingIcon = styled(FiLoader)`
   left: 50%;
   top: 10px;
   animation: spin 1s infinite linear;
-  height:80vh;
-  
+  height: 80vh;
+
   @keyframes spin {
     100% {
       transform: rotate(360deg);
     }
   }
 `;
- 
+
 const Button = styled(NavLink)`
   color: white;
   text-decoration: none;
   flex-direction: row;
   justify-content: space-around;
-  background-color: #8A9A5B;
+  background-color: #8a9a5b;
   padding: 10px 40px;
-  margin-top:20px;
-  
+  margin-top: 20px;
+
   &hover: {
-      opacity: 70%;
-      cursor: pointer;
+    opacity: 70%;
+    cursor: pointer;
   }
 `;
 
@@ -73,21 +73,21 @@ const Container = styled.section`
   background-image: url(${woody});
   background-position: center;
   background-size: cover;
-  flex-direction:column;
+  flex-direction: column;
 `;
 const Paragraph = styled.p`
-    font-family: philosopher;
-    font-weight:100;
-    font-size:25px;
-    opacity:0.5;
-    padding-bottom:10px;
-    `
+  font-family: philosopher;
+  font-weight: 100;
+  font-size: 25px;
+  opacity: 0.5;
+  padding-bottom: 10px;
+`;
 const Title = styled.h1`
-    font-family: unica one;
-    text-align:center;
-    font-size:100px;
-`
+  font-family: unica one;
+  text-align: center;
+  font-size: 100px;
+`;
 const Div = styled.section`
-    height:100vh;
-    background-color:#f7f6f0
-`
+  height: 100vh;
+  background-color: #f7f6f0;
+`;

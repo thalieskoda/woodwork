@@ -1,12 +1,11 @@
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
-import picture from "../header/poups.png"
+import picture from "../header/poups.png";
 
 export const Header = () => {
   return (
     <Wrapper>
-      <LogoContainer to="/" >
-
+      <LogoContainer to="/">
         <Img src={picture} alt="Your SVG" />
       </LogoContainer>
       <Container>
@@ -29,15 +28,15 @@ const Wrapper = styled.div`
   background-color: transparent;
   /* background-color: #8A9A5B; */
   display: flex;
-opacity:0.6;
+  opacity: 0.6;
   align-items: center;
-  justify-content: space-between; 
-`
+  justify-content: space-between;
+`;
 const LogoContainer = styled(NavLink)`
   display: flex;
   align-items: center;
-  margin-left: 20px; 
-`
+  margin-left: 20px;
+`;
 
 const Img = styled.img`
   height: 100px;

@@ -1,10 +1,7 @@
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
-import {
-  AiOutlineFacebook,
-  AiOutlineInstagram,
-} from "react-icons/ai";
-import {PiTiktokLogo} from "react-icons/pi"
+import { AiOutlineFacebook, AiOutlineInstagram } from "react-icons/ai";
+import { PiTiktokLogo } from "react-icons/pi";
 export const Thankyou = () => {
   return (
     <Container>
@@ -17,15 +14,15 @@ export const Thankyou = () => {
       <Follow>
         <Text>Follow me</Text>
         <SocialMedia>
-        <Link to="#">
-          <AiOutlineFacebook />
-        </Link>
-        <Link to="#">
-          <AiOutlineInstagram />
-        </Link>
-        <Link to="#">
-          <PiTiktokLogo/>
-        </Link>
+          <Link to="#">
+            <AiOutlineFacebook />
+          </Link>
+          <Link to="#">
+            <AiOutlineInstagram />
+          </Link>
+          <Link to="#">
+            <PiTiktokLogo />
+          </Link>
         </SocialMedia>
       </Follow>
     </Container>
@@ -38,7 +35,7 @@ const Link = styled(NavLink)`
   display: inline-block; /* Ensures that the link doesn't take the full width */
   font-size: 20px;
   transition: transform 0.2s ease-in-out;
-  
+
   &:hover {
     opacity: 0.7;
     cursor: pointer;
@@ -46,19 +43,18 @@ const Link = styled(NavLink)`
   }
 `;
 
-
 const Thanks = styled.h1`
-font-size:20px;
+  font-size: 20px;
 `;
 
 const Review = styled.h1`
-font-size:15px;
-color:white;
+  font-size: 15px;
+  color: white;
 `;
 const Text = styled.h1`
-font-size:15px;
-color:white;
-margin:100px;
+  font-size: 15px;
+  color: white;
+  margin: 100px;
 `;
 const Circle = styled.div`
   display: flex;
@@ -80,29 +76,29 @@ const Weird = styled.div`
   border-top-right-radius: 100%;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
-  background-color: #8A9A5B;
+  background-color: #8a9a5b;
   height: 70vh;
   width: 20vw;
-  margin:20px;
+  margin: 20px;
 `;
 const Follow = styled.div`
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   justify-content: center;
   border-top-left-radius: 50%;
   border-top-right-radius: 50px;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
-  background-color: #8A9A5B;
+  background-color: #8a9a5b;
   height: 70vh;
   width: 20vw;
-  margin:20px;
+  margin: 20px;
 `;
 const SocialMedia = styled.div`
-display:flex;
-flex-direction:row;
-justify-content:space-around;
-`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+`;
 const Container = styled.div`
   display: flex;
   justify-content: center;
