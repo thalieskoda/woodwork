@@ -15,7 +15,7 @@
     "react-scripts": "5.0.1",
     "react-slick": "^0.29.0",
     "slick-carousel": "^1.8.1",
-    "styled-components": "^6.0.0",
+    "styled-components": "^6.0.7",
     "tamagui": "^1.39.8",
     "tamagui-loader": "^1.39.8",
     "web-vitals": "^2.1.4"
