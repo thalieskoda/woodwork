@@ -89,7 +89,7 @@ const Follow = styled.div`
   border-top-right-radius: 50px;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
-  background-color: #8a9a5b;
+  background-color: #aabd73;
   height: 70vh;
   width: 20vw;
   margin: 20px;

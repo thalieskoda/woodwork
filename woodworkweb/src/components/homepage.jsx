@@ -23,9 +23,7 @@ export const Homepage = () => {
             <Paragraph>Engrave it, Make it unique</Paragraph>
             <Button to={"/products"}>Shop now</Button>
           </Container>
-          <Div>
-            <About />
-          </Div>
+          <About />
           <Carousel />
           <Thankyou />
         </>
@@ -57,9 +55,12 @@ const Button = styled(NavLink)`
   padding: 10px 40px;
   margin-top: 20px;
 
-  &hover: {
-    opacity: 70%;
+  transition: transform 0.2s;
+
+  &:hover {
+    transform: scale(1.1);
     cursor: pointer;
+    color:white;
   }
 `;
 
@@ -86,8 +87,4 @@ const Title = styled.h1`
   font-family: unica one;
   text-align: center;
   font-size: 100px;
-`;
-const Div = styled.section`
-  height: 100vh;
-  background-color: #f7f6f0;
 `;

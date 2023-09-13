@@ -23,26 +23,30 @@ export const Products = () => {
 };
 
 const Title = styled.h1`
-  margin-top: 10vh;
-  margin-bottom: 10vh;
+  margin-top: 100px;
+  margin-bottom: 80px;
+  text-align: center;
 `;
 const SoloProduct = styled(NavLink)`
   display: flex;
   flex-direction: column;
   align-items: center;
-  transition: transform 0.2s; 
+  transition: transform 0.2s;
 
   &:hover {
-    transform: scale(1.1); 
+    transform: scale(1.1);
   }
 `;
 const ProductImage = styled.img`
   height: 200px;
   width: 200px;
+  margin: 20px;
 `;
 const Container = styled.div`
-  height: 100vh;
   display: grid;
   grid-gap: 10px;
+  margin: 20px;
   grid-template-columns: auto auto auto;
+  background-color: #f7f6f0;
+
 `;

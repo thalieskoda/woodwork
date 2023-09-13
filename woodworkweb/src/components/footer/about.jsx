@@ -10,7 +10,7 @@ import {
 } from "react-icons/pi";
 export const About = () => {
   const controls = useAnimation();
-  const { ref, inView } = useInView({ threshold: 0.6 });
+  const { ref, inView } = useInView({ threshold: 0.1 });
   const paragraphVariants = {
     visible: { opacity: 1, y: 0 },
     hidden: { opacity: 0, y: 1 },
@@ -109,7 +109,9 @@ const P = styled(motion.p)`
   font-size: 20px;
 `;
 const Wrapper = styled.div`
-  height: 100vh;
+  background-color: #f7f6f0;
+  border: 1px #f7f6f0 solid;
+
   flex-direction: column;
   justify-content: space-around;
 `;

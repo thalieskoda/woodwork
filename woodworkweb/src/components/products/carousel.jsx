@@ -38,7 +38,6 @@ const ImageSlider = styled.img`
 const Title = styled.h1`
   width: 100%;
   text-align: center;
-  padding: 40px;
 `;
 
 const ProductTitle = styled.p`
@@ -57,5 +56,5 @@ const SliderContainer = styled.div`
 
 const Container = styled.div`
   background-color: #efe8dd;
-  height: 100vh;
+padding: 15vh;
 `;
