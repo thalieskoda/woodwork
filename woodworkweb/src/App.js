@@ -7,7 +7,7 @@ import { About } from "./components/footer/about";
 import GlobalStyles from "./utils/GlobalStyles";
 import { Products } from "./components/products/products";
 import { Faq } from "./components/footer/faq";
-
+import { Accueil } from "./components/accueil";
 function App() {
   return (
     <div className="App">
@@ -16,6 +16,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Homepage />} />
+          <Route path="/fr" element={<Accueil />} />
           <Route path="/products" element={<Products />} />
           <Route path="/contact" element={<ContactUs />} />
           <Route path="/about" element={<About />} />
