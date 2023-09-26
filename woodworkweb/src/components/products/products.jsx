@@ -14,9 +14,8 @@ export const Products = () => {
                 <ProductImage src={product.url} alt={product.title} />
               )}
               <Other>
-
-              <ProductPrice>{`${product.price} $`}</ProductPrice>
-              <ProductTitle>{product.title}</ProductTitle>
+                <ProductPrice>{`${product.price}$`}</ProductPrice>
+                <ProductTitle>{`  ${product.title}`}</ProductTitle>
               </Other>
             </SoloProduct>
           );
@@ -26,9 +25,9 @@ export const Products = () => {
   );
 };
 const Other = styled.div`
-  background-color:pink;
-
-`
+ display:flex;
+ flex-direction:row;
+`;
 
 const Title = styled.h1`
   padding-top: 100px;
@@ -43,7 +42,6 @@ const SoloProduct = styled(NavLink)`
   text-align: left;
   transition: transform 0.2s;
   margin: 20px;
-  background-color:yellow;
 
   &:hover {
     transform: scale(1.1);
