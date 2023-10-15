@@ -21,6 +21,7 @@ export const Accueil = () => {
           <Container>
             <Title>WOODWORK</Title>
             <Paragraph>Engrave it, Make it unique</Paragraph>
+            <Paragraph>This is a test</Paragraph>
             <Button to={"/products"}>Shop now</Button>
           </Container>
           <About />
